@@ -28,7 +28,22 @@ class Solution:
     （注意：这两个序列的长度是相等的）
     """
     def IsPopOrder(self, pushV, popV):
-        pass
+        if pushV == [] or popV == []:
+            return False
+        if len(pushV) != len(popV):
+            return False
+
+        stack = []
+        for item in pushV:
+            stack.append(item)
+            while len(stack) and stack[-1] == popV[0]:
+                stack.pop()
+                popV.pop(0)
+
+        if len(stack) == 0:
+            return True
+        else:
+            return False
 
 
 if __name__ == '__main__':
