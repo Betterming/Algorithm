@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="264b72da-ffbf-4bb9-a73c-c09eebb05148" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/targetOffer/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/targetOffer/graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/targetOffer/linked_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/targetOffer/tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/targetOffer/array.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/targetOffer/dynamicProgramming.py" beforeDir="false" afterPath="$PROJECT_DIR$/targetOffer/advance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/targetOffer/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/targetOffer/advance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/targetOffer/list.py" beforeDir="false" afterPath="$PROJECT_DIR$/targetOffer/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/targetOffer/search_sort.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/targetOffer/search_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/targetOffer/middle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/targetOffer/stack_queue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/targetOffer/string.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/targetOffer/tips.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/targetOffer/tree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/targetOffer/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/targetOffer/base.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +29,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/targetOffer" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/targetOffer" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
