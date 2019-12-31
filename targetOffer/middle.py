@@ -23,6 +23,7 @@ class Solution1:
         else:
             return False
 
+
 # 2. 两个栈实现一个队列
 class Solution2:
     # idea:
