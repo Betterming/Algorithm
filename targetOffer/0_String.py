@@ -29,6 +29,7 @@ class Solution:
                 j += 1
         return ''.join(new_array)
 
+
 if __name__ == '__main__':
     solution = Solution()
     # print(solution.replaceSpace('We are Happy!'))
