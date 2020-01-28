@@ -104,6 +104,100 @@ class Solution:
 
         return newData
 
+    def reOrderArray(self, array):
+        """
+        3. 输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，
+        所有的偶数位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。
+        idea: 遍历数组，奇数偶数各放一个数组，然后合并
+        :param array:
+        :return:
+        """
+        if not array or len(array) == 0:
+            return []
+        odd, even = [], []
+        for i in array:
+            odd.append(i) if i % 2 == 1 else even.append(i)
+        return odd + even
+
+    def reOrderArray2(self, array):
+        array.sort(key=lambda item:item % 2, reverse=True)
+        return array
+
+    def printMatrix(self, matrix):
+        """
+        4. 输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字，例如，如果输入如下4 X 4矩阵：
+        1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 则依次打印出数字1,2,3,4,8,12,16,15,14,13,9,5,6,7,11,10.
+        idea: 可以打印第一行，然后删除第一行，再将剩下的数组逆转90°，重复此操作。
+        :param matrix:
+        :return:
+        """
+        if not matrix:
+            return []
+        result = []
+        while matrix:
+            result += matrix.pop(0)
+            if not matrix:
+                break
+            matrix = self.turn(matrix)
+        return result
+
+    def turn(self, matrix):
+        row = len(matrix)
+        col = len(matrix[0])
+        newMat = []
+        for i in range(col):
+            newMat2 = []
+            for j in range(row):
+                newMat2.append(matrix[j][i])
+            newMat.append(newMat2)
+        newMat.reverse()
+        return newMat
+
+    def printMatrix2(self, matrix):
+        """
+        idea: 观察二维数组发现，可以逐层打印，先最外一层打印完了
+        :param matrix:
+        :return:
+        """
+        if not matrix:
+            return []
+        res = []
+        row = len(matrix)
+        col = len(matrix[0])
+        left = 0
+        right = col - 1
+        top = 0
+        bottom = row - 1
+        while left <= right and top <= bottom:
+            for i in range(left, right+1):  # left to right
+                res.append(matrix[top][i])
+            for i in range(top+1, bottom+1): # top to bottom
+                res.append(matrix[i][right])
+            if top < bottom:
+                for i in range(right-1, left-1, -1): # right to left
+                    res.append(matrix[bottom][i])
+            if left < right:
+                for i in range(bottom-1, top, -1): # bottom to top
+                    res.append(matrix[i][left])
+            left += 1
+            top += 1
+            right -= 1
+            bottom -= 1
+        return res
+
+    def MoreThanHalfNum_Solution(self, numbers):
+        """array tips
+        5. 数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。例如输入一个长度为9的数组{1,2,3,2,2,2,5,4,2}。
+        由于数字2在数组中出现了5次，超过数组长度的一半，因此输出2。如果不存在则输出0。
+        :param numbers:
+        :return:
+        """
+        from collections import Counter
+        count = Counter(numbers).most_common()
+        if count[0][1] > len(numbers) / 2.0:
+            return count[0][0]
+        return 0
+
 
 if __name__ == '__main__':
     solution = Solution()
@@ -112,3 +206,17 @@ if __name__ == '__main__':
 
     res2 = solution.Find(4, [[1, 2, 8, 9], [2, 4, 9, 12], [4, 7, 10, 13], [6, 8, 11, 15]])
     print("Find: %s" % res2)
+
+    res3 = solution.reOrderArray([2, 10, 1, 3, 4, 5, 23, 1])
+    print("reOrderArray: ", res3)
+
+    res32 = solution.reOrderArray2([2, 10, 1, 3, 4, 5, 23, 1])
+    print("reOrderArray2: ", res32)
+    res4  = solution.printMatrix([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]])
+    print("printMatrix: ", res4)
+    res42  = solution.printMatrix([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]])
+    print("printMatrix: ", res42)
+
+    res5 = solution.MoreThanHalfNum_Solution([1,2,3,2,2,2,5,4,2])
+    print("MoreThanHalfNum_Solution: ", res5)
+

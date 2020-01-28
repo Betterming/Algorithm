@@ -49,6 +49,27 @@ class Solution2:
     def size(self):
         return len(self.stack2) + len(self.stack1)
 
+class Solution3:
+    def __init__(self):
+        self.minStack = []
+        self.stack = []
+
+    def push(self, node):
+        self.stack.append(node)
+        if not self.minStack:
+            self.minStack.append(node)
+        if node < self.minStack[-1]:
+            self.minStack.append(node)
+        else:
+            self.minStack.append(self.minStack[-1])
+    def pop(self):
+        self.minStack.pop(-1)
+        self.stack.pop(-1)
+    def top(self):
+        return self.stack[-1]
+    def min(self):
+        return self.minStack[-1]
+
 
 if __name__ == '__main__':
     solution1 = Solution1()

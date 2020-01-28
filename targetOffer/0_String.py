@@ -29,8 +29,36 @@ class Solution:
                 j += 1
         return ''.join(new_array)
 
+    def Permutation(self, ss):
+
+        if len(ss) <= 1:
+            return ss
+        res = set()
+        for i in range(len(ss)):
+            for j in self.Permutation(ss[:i] + ss[i+1:]):
+                res.add(ss[i] + j)
+        return sorted(res)
+
+    def FirstNotRepeatingChar(self, s):
+        """
+        3. 在一个字符串(0<=字符串长度<=10000，全部由字母组成)中找到第一个只出现一次的字符,并返回它的位置, 如果没有则返回 -1（需要区分大小写）.
+        idea: 暴力判断
+        :param s:
+        :return:
+        """
+        if len(s) > 10000 or len(s) <= 0:
+            return -1
+        for i in s:
+            if s.count(i) == 1:
+                return s.index(i)
+
 
 if __name__ == '__main__':
     solution = Solution()
     # print(solution.replaceSpace('We are Happy!'))
     print(solution.replaceSpace2('We are Happy!'))
+    res2 = solution.Permutation("abcbd")
+    print("Permutation", len(res2), res2)
+    res3 = solution.FirstNotRepeatingChar("abadfabdefaaac")
+    print("FirstNotRepeatingChar: ", res3)
+
