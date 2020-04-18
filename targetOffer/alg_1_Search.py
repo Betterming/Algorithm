@@ -1,7 +1,30 @@
 # -*- coding:utf-8 -*-
 class Solution:
     """medium
-    1. 把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。
+    1. 在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。
+    请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
+    idea: 从左下角元素往上查找，右边元素是比这个元素大，上边是的元素比这个元素小。
+    于是，target比这个元素小就往上找，比这个元素大就往右找。如果出了边界，则说明二维数组中不存在target元素。
+    """
+
+    def Find(self, target, array):
+        if not array or not target:
+            return False
+        row = len(array) - 1
+        col = len(array[0]) - 1
+        i = row
+        j = 0
+        while i >= 0 and j <= col:
+            if array[i][j] > target:
+                i -= 1
+            elif array[i][j] < target:
+                j += 1
+            else:
+                return True
+        return False
+
+    """medium
+    6. 把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。
     输入一个非递减排序的数组的一个旋转，输出旋转数组的最小元素。
     例如数组{3,4,5,1,2}为{1,2,3,4,5}的一个旋转，该数组的最小值为1。
     NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。
@@ -44,6 +67,53 @@ class Solution:
                 result = item
         return result
 
+    def GetNumberOfK(self, data, k):
+        """
+        37. 统计一个数字在排序数组中出现的次数。
+        idea1: 遍历统计
+        :param data:
+        :param k:
+        :return:
+        """
+        count = 0
+        for i in data:
+            if i == k:
+                count += 1
+        return count
+
+
+    def GetNumberOfK2(self, data, k):
+        """
+        idea2: 利用数组的count方法
+        :param data:
+        :param k:
+        :return:
+        """
+        return data.count(k)
+
+    def GetNumberOfK3(self, data, k):
+        """
+        idea3: 二分查找
+        :param data:
+        :param k:
+        :return:
+        """
+        return self.binarySearch(data, k+0.5) - self.binarySearch(data, k-0.5)
+
+    def binarySearch(self, data, k):
+        if len(data) <= 0:
+            return None
+        low = 0
+        high = len(data) - 1
+        while low <= high:
+            mid = (low + high) // 2
+            if data[mid] < k:
+                low = mid + 1
+            else:
+                high = mid - 1
+        return high
+
+
 
 if __name__ == '__main__':
     solution = Solution()
@@ -51,3 +121,10 @@ if __name__ == '__main__':
     res2 = solution.minNumberInRotateArray2([3, 4, 5, 1, 2])
     print("minNumberInRotateArray: %s" % res1)
     print("minNumberInRotateArray2: %s" % res2)
+
+    res21 = solution.GetNumberOfK([2, 3, 3, 3, 3, 4, 5], 3)
+    print("GetNumberOfK: ", res21)
+    res22 = solution.GetNumberOfK([2, 3, 3, 3, 3, 4, 5], 3)
+    print("GetNumberOfK: ", res22)
+    res23 = solution.GetNumberOfK3([2, 3, 3, 4, 5], 3)
+    print("GetNumberOfK: ", res23)

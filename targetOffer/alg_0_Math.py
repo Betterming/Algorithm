@@ -7,12 +7,12 @@ import functools
 
 
 class Solution:
-    """
+    def __init__(self):
+        self.arr = []
 
-    """
     def Fibonacci(self, n):
         """
-        1. 大家都知道斐波那契数列，现在要求输入一个整数n，请你输出斐波那契数列的第n项（从0开始，第0项为0）。n<=39
+        7. 大家都知道斐波那契数列，现在要求输入一个整数n，请你输出斐波那契数列的第n项（从0开始，第0项为0）。n<=39
         idea: 动态规划：dp[0] = 0, dp[1] = 1, dp[i] = dp[i-1] + dp[i-2]
         :param n:
         :return:
@@ -28,7 +28,7 @@ class Solution:
 
     def jumpFloorII(self, number):
         """
-        2. 一只青蛙一次可以跳上1级台阶，也可以跳上2级……它也可以跳上n级。求该青蛙跳上一个n级的台阶总共有多少种跳法。
+        9. 一只青蛙一次可以跳上1级台阶，也可以跳上2级……它也可以跳上n级。求该青蛙跳上一个n级的台阶总共有多少种跳法。
         idea: 动态规划：f(1) = 1, f(n) = 2*f(n)
         :return: 
         """
@@ -43,7 +43,7 @@ class Solution:
 
     def rectCover(self, number):
         """
-        3. 我们可以用2*1的小矩形横着或者竖着去覆盖更大的矩形。请问用n个2*1的小矩形无重叠地覆盖一个2*n的大矩形，总共有多少种方法
+        10. 我们可以用2*1的小矩形横着或者竖着去覆盖更大的矩形。请问用n个2*1的小矩形无重叠地覆盖一个2*n的大矩形，总共有多少种方法
         idea：dp法，f(n) = f(n-1) + f(n-2)
         :return:
         """
@@ -61,7 +61,7 @@ class Solution:
 
     def NumberOf1Between1AndN_Solution(self, n):
         """
-        3.求出1~13的整数中1出现的次数,并算出100~1300的整数中1出现的次数？为此他特别数了一下1~13中包含1的数字有1、10、11、12、13
+        31.求出1~13的整数中1出现的次数,并算出100~1300的整数中1出现的次数？为此他特别数了一下1~13中包含1的数字有1、10、11、12、13
         因此共出现6次,但是对于后面问题他就没辙了。ACMer希望你们帮帮他,并把问题更加普遍化,
         可以很快的求出任意非负整数区间中1出现的次数（从1 到 n 中1出现的次数）
         idea: 将1到n之间的所有数字字符串化，然后全部来连起来统计1的个数
@@ -131,7 +131,7 @@ class Solution:
 
     def PrintMinNumber(self, numbers):
         """
-        4. 输入一个正整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。例如输入数组{3，32，321}，
+        32. 输入一个正整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。例如输入数组{3，32，321}，
         则打印出这三个数字能排成的最小数字为321323。
         idea: 重写排序规则，由数组中的某两个元素来定，如果x+y < y+x, 那么x排在y前面
         总结一下排序规则：
@@ -147,6 +147,53 @@ class Solution:
         numbers = list(map(str, numbers))
         numbers.sort(key=functools.cmp_to_key(self.compare))
         return "".join(numbers).lstrip('0')
+
+    def Sum_Solution(self, n):
+        """
+        47.求1+2+3+...+n，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。
+        :param n:
+        :return:
+        """
+        self.sum(n)
+
+    def sum(self, n):
+        try:
+            1 % n
+            return n + sum(n - 1)
+        except:
+            return 0
+
+    def Add(self, num1, num2):
+        """
+        48.写一个函数，求两个整数之和，要求在函数体内不得使用+、-、*、/四则运算符号。
+        :param num1:
+        :param num2:
+        :return:
+        """
+        from ctypes import c_int
+        while num2 != 0:
+            temp = c_int(num1 ^ num2).value  # 不带进位的相加结果
+            num2 = c_int((num1 & num2) << 1).value  # 带进位
+            num1 = temp
+        return num1
+
+    def Insert(self, num):
+        """
+        63.如何得到一个数据流中的中位数？如果从数据流中读出奇数个数值，那么中位数就是所有数值排序之后位于中间的数值。
+        如果从数据流中读出偶数个数值，那么中位数就是所有数值排序之后中间两个数的平均值。
+        我们使用Insert()方法读取数据流，使用GetMedian()方法获取当前读取数据的中位数。
+        :param num:
+        :return:
+        """
+        self.arr.append(num)
+        self.arr.sort()
+
+    def GetMedian(self):
+        length = len(self.arr)
+        if length % 2 == 1:
+            return self.arr[length // 2]
+        else:
+            return (self.arr[length // 2] + self.arr[length // 2 - 1]) / 2.0
 
 
 if __name__ == '__main__':

@@ -1,5 +1,5 @@
 class Solution1:
-    # 1. 两个序列， 第一个序列是入栈顺序，第二个是出战顺序，判断出栈是否正确
+    # 21. 两个序列， 第一个序列是入栈顺序，第二个是出战顺序，判断出栈是否正确
     # idea：
     # 1) 边界校验
     # 2) 序列pushV逐个入栈
@@ -23,7 +23,7 @@ class Solution1:
         else:
             return False
 
-# 2. 两个栈实现一个队列
+# 5. 两个栈实现一个队列
 class Solution2:
     # idea:
     # 1. 两个栈stack1，stack2，push正常入栈
@@ -49,6 +49,7 @@ class Solution2:
     def size(self):
         return len(self.stack2) + len(self.stack1)
 
+# 20, 包含min函数的栈
 class Solution3:
     def __init__(self):
         self.minStack = []

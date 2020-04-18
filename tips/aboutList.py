@@ -17,7 +17,17 @@
 # 6) a.count(2),统计a数组中值等于2的个数
 # 7) extend(): 用于在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表),返回值为None。只能a.extend(b)，若想用a，b的一部分数据，必须先处理好后再用extend
 
-# 三，对于Node的理解：
+# 三、Python中字符串
+a = " jjj jk , ajg l aj; a k"
+import re
+re.split(r'[,;\s]\s*', a)
+# 1) 相加：str1 + str2, 两字符串可直接相加拼接，但是不能和其他类型直接相加
+# 2) 截取：a[2:5:2], a[start:end:step]
+# 3) 分割：a.split(sep, maxSplit),sep为分割符，默认为空字符(包括空格，换行“\n", 制表"\t")，maxSplit:最大分割次数，默认或者-1为没有限制.
+#    若想复杂的分割可用re.split(pattern, anyString, maxSplit), pattern为正则表达式，一般用 r'[,;.\s]\s*' 表示
+# 4)
+
+# 四，对于Node的理解：
 # 1.常量 None（N 必须大写）和 False 不同，它不表示 0，也不表示空字符串，而表示没有值，也就是空值，它属于 NoneType 类型。
 # 2.None 是 NoneType 数据类型的唯一值（其他编程语言可能称这个值为 null、nil 或 undefined），也就是说，我们不能再创建其它 NoneType 类型的变量，
 #   但是可以将 None 赋值给任何变量。如果希望变量中存储的东西不与任何其它值混淆，就可以使用 None。
