@@ -5,7 +5,7 @@ class Solution:
     def replaceSpace(self, s):
         """ simple
         2. 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。
-        思路：1) 直接用string的replace方法 2) 用一个新的的数组，从前向后边判断边复制 3) 在原来数组上从后向前边判断边复制
+        思路：1) 直接用string的replace方法 2) 用一个新的的数组，从前向后边判断边复制 3) 在原来数组上从后向前边判断边复制(python没法弄，java，c++可以)
         """
         return s.replace(' ', '%20')
 
@@ -192,6 +192,7 @@ if __name__ == '__main__':
     solution = Solution()
     # print(solution.replaceSpace('We are Happy!'))
     print(solution.replaceSpace2('We are Happy!'))
+    print(solution.replaceSpace3('We are Happy!'))
     res2 = solution.Permutation("abcbd")
     print("Permutation", len(res2), res2)
     res3 = solution.FirstNotRepeatingChar("abadfabdefaaac")

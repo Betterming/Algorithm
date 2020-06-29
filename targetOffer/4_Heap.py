@@ -11,6 +11,7 @@ class Solution:
         import heapq
         return heapq.nsmallest(k, tinput)
 
+
 if __name__ == '__main__':
     solution = Solution()
     res6 = solution.GetLeastNumbers_Solution([4,5,1,6,2,7,3,8], 3)
