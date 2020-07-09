@@ -5,7 +5,7 @@ class Solution:
     def replaceSpace(self, s):
         """ simple
         2. 请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。
-        思路：1) 直接用string的replace方法 2) 用一个新的的数组，从前向后边判断边复制 3) 在原来数组上从后向前边判断边复制(python没法弄，java，c++可以)
+        思路：1) 直接用string的replace方法 2) 用一个新的的数组，从前向后边判断边复制 3) 在原来数组上从后向前边判断边复制
         """
         return s.replace(' ', '%20')
 
@@ -31,6 +31,30 @@ class Solution:
                 j += 1
         return ''.join(new_array)
 
+    def replaceSpace3(self, s):
+        if not s:
+            return None
+        s_len = len(s)
+        if s_len <= 0:
+            return ''
+        space_count = 0
+        for i in s:
+            if i == ' ':
+                space_count += 1
+
+        s += ' ' * space_count * 2
+        j = space_count
+        for i in range(s_len-1, -1, -1):
+            if s[i] != ' ':
+                s[i + j * 2] = s[i]
+            else:
+                s[i + j * 2] = '0'
+                s[i + j * 2 - 1] = '2'
+                s[i + j * 2 - 2] = '%'
+                j -= 1
+        return s
+
+
     def Permutation(self, ss):
         """
         27.字符串排序输入一个字符串,按字典序打印出该字符串中字符的所有排列。例如输入字符串abc,
@@ -46,10 +70,18 @@ class Solution:
                 res.add(ss[i] + j)
         return sorted(res)
 
+    def Permutation2(self, ss):
+        if len(ss) <= 1:
+            return ss
+        from itertools import permutations
+        res = list(map(lambda x: ''.join(list(x)), permutations(ss)))
+        return res
+
+
     def FirstNotRepeatingChar(self, s):
         """
         34. 在一个字符串(0<=字符串长度<=10000，全部由字母组成)中找到第一个只出现一次的字符,并返回它的位置, 如果没有则返回 -1（需要区分大小写）.
-        idea: 暴力判断
+        idea: 暴力判断（用字符串的count方法，实际是采用哈希方法 （字典））
         :param s:
         :return:
         """
@@ -59,9 +91,27 @@ class Solution:
             if s.count(i) == 1:
                 return s.index(i)
 
+    def FirstNotRepeatingChar2(self, s):
+        """
+        使用字典
+        :param s:
+        :return:
+        """
+        if not s or len(s) > 1000 or len(s) <= 0:
+            return -1
+        d = {}
+        for i in s:
+            if i in d:
+                d[i] = d[i] + 1
+            else:
+                d[i] = 1
+        for k, v in d.items():
+            if v == 1:
+                return s.index(k)
+
     def LeftRotateString(self, s, n):
         """
-        43. 循环左移K位后的序列输出
+        43. 循环左移n位后的序列输出
         例如: "1234", 循环左移7位为："4123"
         idea: 字符串拼接技巧
         :param s:
@@ -89,7 +139,7 @@ class Solution:
             flag = -1
         res = 0
         for i in s:
-            if i >= '0' and i <= '9':
+            if '0' <= i <= '9':
                 res = res * 10 + ord(i) - ord('0')
             else:
                 return 0
@@ -192,7 +242,7 @@ if __name__ == '__main__':
     solution = Solution()
     # print(solution.replaceSpace('We are Happy!'))
     print(solution.replaceSpace2('We are Happy!'))
-    print(solution.replaceSpace3('We are Happy!'))
+    print(solution.replaceSpace3(['W', 'e', ' ', 'a', ' ', 'H']))
     res2 = solution.Permutation("abcbd")
     print("Permutation", len(res2), res2)
     res3 = solution.FirstNotRepeatingChar("abadfabdefaaac")
@@ -211,6 +261,11 @@ if __name__ == '__main__':
     print(solution.FirstAppearingOnce())
     solution.Insert('e')
     print(solution.FirstAppearingOnce())
+
+    print(solution.Permutation2('abc'))
+
+    res44 = solution.ReverseSentence("student. a am I")
+    print("ReverseSentence", res44)
 
 
 
