@@ -143,7 +143,14 @@ class Solution:
 
     # dict
     # OrderedDict: 能记录你 key 和 value 插入的顺序，底层其实是一个双向链表加哈希表的实现。我们甚至可以使用move_to_end这样的函数
-    # defaultdict: 以很好地来解决一些初始化的问题，比如 value 是一个 list，每次需要判断 key 是否存在的情况
+    # defaultdict: 以很好地来解决一些初始化的问题，
+    # defaultdict的作用是在于，当字典里的key不存在但被查找时，返回的不是keyError而是一个默认值
+    # defaultdict接受一个工厂函数作为参数，如下来构造：
+    #
+    # dict =defaultdict( factory_function)
+    # 这个factory_function可以是list、set、str等等，作用是当key不存在时，返回的是工厂函数的默认值，
+    # 比如list对应[ ]，str对应的是空字符串，set对应set( )，int对应0，
+
     def dictDemo(self):
         a = dict()
 
@@ -174,6 +181,18 @@ class Solution:
             dd[k].append(v)
         sorted(dd.items())  # 字典按照key排序
         print(dd)
+
+        di = defaultdict(int)
+        ds = defaultdict(set)
+        dstr = defaultdict(str)
+        dl = defaultdict(list)
+        dlambda = defaultdict(lambda: 0)  # 指定默认值
+        print("di: ", di['yellow'])
+        print("ds: ", ds['yellow'])
+        print("dstr: ", dstr['yellow'])
+        print("dl: ", dl['yellow'])
+        print("dlambda: ", dlambda['yellow'])
+
 
     # heapq: 即priority queue，heapq 就是 python 的 `priority` queue，`heapq[0]`即为堆顶元素。
     # heapq 的实现是小顶堆，如果需要一个大顶堆，常规的一个做法是把值取负存入，取出时再反转。以下是借助 heapq 来实现 heapsort 的例子：
@@ -212,6 +231,36 @@ class Solution:
     def maxOrminDemo(self):
         print(float('inf'))
         print(float('-inf'))
+
+    # 随机数random
+    def randomDemo(self):
+        import random
+        print(random.randint(1, 10))  # 产生 1 到 10 的一个整数型随机数
+        print(random.random())  # 产生 0 到 1 之间的随机浮点数
+        print(random.uniform(1.1, 5.4))  # 产生  1.1 到 5.4 之间的随机浮点数，区间可以不是整数
+        print(random.choice('tomorrow'))  # 从序列中随机选取一个元素
+        print(random.randrange(1, 100, 2))  # 生成从1到100的间隔为2的随机整数
+
+        a = [1, 3, 5, 6, 7]  # 将序列a中的元素顺序打乱
+        random.shuffle(a)
+        print(a)
+
+    # 随机数扩展:
+    # 随机大数到随机小数，直接排除掉不符合要求的的数，并再次调用random
+    def random7To5(self):
+        import random
+        res = random.randint(1, 7)
+        while res > 5:
+            res = random.randint(1, 7)
+        print("res: ", res)
+
+    def random5To7(self):
+        import random
+        res = 25
+        while res > 21:
+            res = 5 * (random.randint(1, 5) - 1) + random.randint(1, 5)
+        print(res % 7 + 1)
+
 
     # all() 函数用于判断给定的可迭代参数 iterable中的所有元素是否不为 0、''、False 或者 iterable 为空，如果是返回 True，否则返回 False。
     # any() 函数用于判断给定的可迭代参数 iterable 是否全部为空对象，如果都为空、0、false，则返回 False，
@@ -268,6 +317,8 @@ if __name__ == '__main__':
     solution.heapqDemo(testArr, 4)
     solution.counterDemo(4)
     solution.stringsDemo()
+    solution.randomDemo()
+    solution.random7To5()
     solution.maxOrminDemo()
     solution.anyOrallDemo()
     solution.permutationsOrCombinations()

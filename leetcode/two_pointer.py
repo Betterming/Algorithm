@@ -70,34 +70,85 @@ class Solution:
     def minWindow(self, s: str, t: str) -> str:
         """
         L76.给你一个字符串 S、一个字符串 T，请在字符串 S 里面找出：包含 T 所有字符的最小子串。
+        idea：解题思路
+        采用滑动窗口法
+        - 首先，需要明确思路：s字符串维护一个窗口[left, right), right先一直移动直到窗口内部字符串全部包含T字符串为止，即找出可行解。此时left才开始移动直到不满足条件为止。
+        - 其次，如何设计出满足窗口内字符串包含T的所有字符这一条件。
+          - 针对T，S分别构造一个字典 need = defaultdict(int), window = defaultdict(int)。其中key为T/S中不重复的字符，value为其字符个数。
+          - 构造一个变量matched，表示窗口内满足need条件的字符数，当matched == len(need)，表示窗口已经覆盖字符串T
+        - 最后，怎样获得最小字串。设置res=MAX，start = 0，当matched == len(need)时，更新res，start。通过s[start: start:res]获取结果
+
+        步骤：
+        - 边界检查，初始化s长度sLen，res=sLen + 1，start=0；left = right = 0；matched = 0；window = defaultdict(int)，need = defaultdict(int)；获得need字典，need中value不为0的个数nLen
+        - 滑动right：
+          - 先获得c1 = s[right],然后right右移
+          - 若c1在need中，更新window
+            - 若c1在窗口中个数等于T中c1字符个数，则更新matched
+          - 当matched等于need大小，即窗口已覆盖字符串T时，可以移动left了
+            - 首先更新一波res，start。（最后结果肯定是在此状态下取得的。）
+            - 然后先取得c2=s[left]，然后left右移
+            - 最后判断c2是否在need中
+              - 若在：(一定更新window，可能更新matched)
+                - 判断window[c2]是否等于need[c2]
+                  - 等于，则更新matched
+                  - 不等于，不更新matched
+                - 更新window
+              - 若不在：window和matched都不用更新
+        - 最后如果res没有改变过，则返回“”，改变过返回s[start: start:res]
+
+链接：https://leetcode-cn.com/problems/minimum-window-substring/solution/76-zui-xiao-fu-gai-zi-chuan-by-betterming-3/
         :param s:
         :param t:
         :return:
         """
         if not s or not t:
             return ""
-        sLen, tLen = len(s), len(t)
+
+        sLen = len(s)
         left = right = 0
-        res = sLen
+        res = sLen + 1
         matched = 0
-        need = {}
-        window = {}
+        start = 0
+        from collections import defaultdict
+        window = defaultdict(int)
+        need = defaultdict(int)
+
         for i in t:
-            if i in need:
-                need[i] += 1
-            else:
-                need[i] = 1
+            need[i] += 1
+        nLen = 0
+        for i in need.values():
+            if i > 0:
+                nLen += 1
+
         while right < sLen:
             c1 = s[right]
+            right += 1
+            if need[c1] > 0:
+                window[c1] += 1
+                if need[c1] == window[c1]:
+                    matched += 1
 
+            while matched == nLen:
+                # 更新最小字串结果
+                if right - left < res:
+                    res = right - left
+                    start = left
+                c2 = s[left]
+                left += 1
 
+                if need[c2] > 0:
+                    if window[c2] == need[c2]:
+                        matched -= 1
+                    window[c2] -= 1
 
-
+        return "" if res == sLen + 1 else s[start: start+res]
 
 
 if __name__ == '__main__':
     solution = Solution()
     print(solution.threeSum([-1, 0, 1, 2, -1, -4]))
     print(solution.lengthOfLongestSubstring(("abcabcbb")))
+    # print(solution.minWindow("ADOBECODEBANC", "ABC"))
+    print(solution.minWindow("aa", "aa"))
 
 
