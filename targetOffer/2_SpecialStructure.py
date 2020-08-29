@@ -40,7 +40,7 @@ class Solution1:
 # 5. 两个栈实现一个队列
 class Solution2:
     # idea:
-    # 1. 两个栈stack1，stack2，push正常入栈
+      # 1. 两个栈stack1，stack2，push正常入栈
     # 2. pop时，当stack2有值时直接从stack2弹出元素，当stack2无值时，若stack1也无值，直接返回None
     # 若stack1有值时，将stack1所有元素都移到stack2中，再从stack2中弹出
     def __init__(self):
