@@ -20,15 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="264b72da-ffbf-4bb9-a73c-c09eebb05148" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tips/dfs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tips/graphDemo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tips/just_test.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tips/num.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bishi/1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bishi/2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bishi/3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bishi/4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bishi/5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bishi/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bishi/a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bishi/ff.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bishi/nmatrix.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/targetOffer/2_SpecialStructure.py" beforeDir="false" afterPath="$PROJECT_DIR$/targetOffer/2_SpecialStructure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/targetOffer/alg_4_DynamicProgramming.py" beforeDir="false" afterPath="$PROJECT_DIR$/targetOffer/alg_4_DynamicProgramming.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tips/num.py" beforeDir="false" afterPath="$PROJECT_DIR$/bishi/num.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tips/python_tips.py" beforeDir="false" afterPath="$PROJECT_DIR$/tips/python_tips.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,38 +70,17 @@
     <property name="settings.editor.splitter.proportion" value="0.25301206" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/targetOffer" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bishi" />
       <recent name="$PROJECT_DIR$/targetOffer" />
       <recent name="C:\0_Files\MyGitHubCode\Algorithm\tips" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/targetOffer" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.num">
-    <configuration name="alg_4_DynamicProgramming" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/targetOffer" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/targetOffer/alg_4_DynamicProgramming.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.1">
+    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -108,11 +89,11 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tips" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tips/demo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bishi/1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -121,7 +102,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="num" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,11 +111,11 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tips" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tips/num.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bishi/3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,7 +124,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="python_tips" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -152,11 +133,11 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tips" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tips/python_tips.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bishi/4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,7 +146,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testAnything" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -174,11 +155,33 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tips" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tips/testAnything.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bishi/5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ff" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tips" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bishi/ff.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -189,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.num" />
-        <item itemvalue="Python.alg_4_DynamicProgramming" />
-        <item itemvalue="Python.testAnything" />
-        <item itemvalue="Python.python_tips" />
-        <item itemvalue="Python.demo" />
+        <item itemvalue="Python.1" />
+        <item itemvalue="Python.5" />
+        <item itemvalue="Python.4" />
+        <item itemvalue="Python.3" />
+        <item itemvalue="Python.ff" />
       </list>
     </recent_temporary>
   </component>
@@ -236,6 +239,9 @@
       <workItem from="1598544338812" duration="54000" />
       <workItem from="1598544396397" duration="156000" />
       <workItem from="1598624459198" duration="456000" />
+      <workItem from="1598700175335" duration="387000" />
+      <workItem from="1598777954551" duration="595000" />
+      <workItem from="1598958087328" duration="19136000" />
     </task>
     <servers />
   </component>
@@ -263,6 +269,10 @@
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
     <state x="424" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1020@0.23.1920.1020" timestamp="1598544095303" />
+    <state x="992" y="339" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598963033244">
+      <screen x="0" y="23" width="1920" height="1020" />
+    </state>
+    <state x="992" y="339" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1020@0.23.1920.1020" timestamp="1598963033244" />
     <state x="1253" y="256" key="#com.intellij.ide.util.MemberChooser" timestamp="1593419353994">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
@@ -275,38 +285,38 @@
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
     <state x="535" y="340" key="FileChooserDialogImpl/0.23.1920.1020@0.23.1920.1020" timestamp="1598106704236" />
-    <state width="1876" height="244" key="GridCell.Tab.0.bottom" timestamp="1598544333302">
+    <state width="1222" height="13" key="GridCell.Tab.0.bottom" timestamp="1599059706415">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
-    <state width="1876" height="244" key="GridCell.Tab.0.bottom/0.23.1920.1020@0.23.1920.1020" timestamp="1598544333302" />
-    <state width="1876" height="244" key="GridCell.Tab.0.center" timestamp="1598544333302">
+    <state width="1222" height="13" key="GridCell.Tab.0.bottom/0.23.1920.1020@0.23.1920.1020" timestamp="1599059706415" />
+    <state width="1222" height="13" key="GridCell.Tab.0.center" timestamp="1599059706415">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
-    <state width="1876" height="244" key="GridCell.Tab.0.center/0.23.1920.1020@0.23.1920.1020" timestamp="1598544333302" />
-    <state width="1876" height="244" key="GridCell.Tab.0.left" timestamp="1598544333302">
+    <state width="1222" height="13" key="GridCell.Tab.0.center/0.23.1920.1020@0.23.1920.1020" timestamp="1599059706415" />
+    <state width="1222" height="13" key="GridCell.Tab.0.left" timestamp="1599059706415">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
-    <state width="1876" height="244" key="GridCell.Tab.0.left/0.23.1920.1020@0.23.1920.1020" timestamp="1598544333302" />
-    <state width="1876" height="244" key="GridCell.Tab.0.right" timestamp="1598544333302">
+    <state width="1222" height="13" key="GridCell.Tab.0.left/0.23.1920.1020@0.23.1920.1020" timestamp="1599059706415" />
+    <state width="1222" height="13" key="GridCell.Tab.0.right" timestamp="1599059706415">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
-    <state width="1876" height="244" key="GridCell.Tab.0.right/0.23.1920.1020@0.23.1920.1020" timestamp="1598544333302" />
-    <state width="916" height="281" key="GridCell.Tab.1.bottom" timestamp="1598536741977">
+    <state width="1222" height="13" key="GridCell.Tab.0.right/0.23.1920.1020@0.23.1920.1020" timestamp="1599059706415" />
+    <state width="1876" height="281" key="GridCell.Tab.1.bottom" timestamp="1598963922276">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
-    <state width="916" height="281" key="GridCell.Tab.1.bottom/0.23.1920.1020@0.23.1920.1020" timestamp="1598536741977" />
-    <state width="916" height="281" key="GridCell.Tab.1.center" timestamp="1598536741977">
+    <state width="1876" height="281" key="GridCell.Tab.1.bottom/0.23.1920.1020@0.23.1920.1020" timestamp="1598963922276" />
+    <state width="1876" height="281" key="GridCell.Tab.1.center" timestamp="1598963922275">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
-    <state width="916" height="281" key="GridCell.Tab.1.center/0.23.1920.1020@0.23.1920.1020" timestamp="1598536741977" />
-    <state width="916" height="281" key="GridCell.Tab.1.left" timestamp="1598536741976">
+    <state width="1876" height="281" key="GridCell.Tab.1.center/0.23.1920.1020@0.23.1920.1020" timestamp="1598963922275" />
+    <state width="1876" height="281" key="GridCell.Tab.1.left" timestamp="1598963922275">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
-    <state width="916" height="281" key="GridCell.Tab.1.left/0.23.1920.1020@0.23.1920.1020" timestamp="1598536741976" />
-    <state width="916" height="281" key="GridCell.Tab.1.right" timestamp="1598536741977">
+    <state width="1876" height="281" key="GridCell.Tab.1.left/0.23.1920.1020@0.23.1920.1020" timestamp="1598963922275" />
+    <state width="1876" height="281" key="GridCell.Tab.1.right" timestamp="1598963922275">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
-    <state width="916" height="281" key="GridCell.Tab.1.right/0.23.1920.1020@0.23.1920.1020" timestamp="1598536741977" />
+    <state width="1876" height="281" key="GridCell.Tab.1.right/0.23.1920.1020@0.23.1920.1020" timestamp="1598963922275" />
     <state x="720" y="75" key="SettingsEditor" timestamp="1598544347945">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
@@ -332,14 +342,21 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Algorithm$demo.coverage" NAME="demo Coverage Results" MODIFIED="1595092507520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
     <SUITE FILE_PATH="coverage/Algorithm$testAnything.coverage" NAME="testAnything Coverage Results" MODIFIED="1595098580399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
     <SUITE FILE_PATH="coverage/Algorithm$alg_4_DynamicProgramming.coverage" NAME="alg_4_DynamicProgramming Coverage Results" MODIFIED="1598523722109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/targetOffer" />
+    <SUITE FILE_PATH="coverage/Algorithm$4.coverage" NAME="4 Coverage Results" MODIFIED="1599048785173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
     <SUITE FILE_PATH="coverage/Algorithm$num.coverage" NAME="num Coverage Results" MODIFIED="1598544299517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
-    <SUITE FILE_PATH="coverage/Algorithm$TreeDemo.coverage" NAME="TreeDemo Coverage Results" MODIFIED="1586678433420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
     <SUITE FILE_PATH="coverage/Algorithm$backtrack.coverage" NAME="backtrack Coverage Results" MODIFIED="1593502737595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode" />
+    <SUITE FILE_PATH="coverage/Algorithm$ff.coverage" NAME="ff Coverage Results" MODIFIED="1599041607940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
+    <SUITE FILE_PATH="coverage/Algorithm$3.coverage" NAME="3 Coverage Results" MODIFIED="1599044941403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
+    <SUITE FILE_PATH="coverage/Algorithm$demo.coverage" NAME="demo Coverage Results" MODIFIED="1595092507520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
+    <SUITE FILE_PATH="coverage/Algorithm$a.coverage" NAME="a Coverage Results" MODIFIED="1598963942462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
+    <SUITE FILE_PATH="coverage/Algorithm$5.coverage" NAME="5 Coverage Results" MODIFIED="1599049309082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
+    <SUITE FILE_PATH="coverage/Algorithm$TreeDemo.coverage" NAME="TreeDemo Coverage Results" MODIFIED="1586678433420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
     <SUITE FILE_PATH="coverage/Algorithm$python_tips.coverage" NAME="python_tips Coverage Results" MODIFIED="1595095403421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
     <SUITE FILE_PATH="coverage/Algorithm$0_String.coverage" NAME="0_String Coverage Results" MODIFIED="1594081984631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/targetOffer" />
+    <SUITE FILE_PATH="coverage/Algorithm$nmatrix.coverage" NAME="nmatrix Coverage Results" MODIFIED="1598962677656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
+    <SUITE FILE_PATH="coverage/Algorithm$1.coverage" NAME="1 Coverage Results" MODIFIED="1599050546581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
     <SUITE FILE_PATH="coverage/Algorithm$two_pointer.coverage" NAME="two_pointer Coverage Results" MODIFIED="1594906541178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode" />
   </component>
 </project>

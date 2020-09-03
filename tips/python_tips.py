@@ -3,13 +3,11 @@ python刷题常用功能
 is 与 == 区别：
 
 is 用于判断两个变量引用对象是否为同一个(同一块内存空间)， == 用于判断引用变量的值是否相等。
-is 用于判断两个变量引用对象是否为同一个(同一块内存空间)， == 用于判断引用变量的值是否相等。
 """
 
 
 class Solution:
-    # 1.list
-    # 初始化, 遍历，枚举enumerate，拉链聚合
+    # 1.list 初始化, 遍历，枚举enumerate，拉链聚合
     def listDemo(self, arr, arr2):
         l = [0 for _ in range(len(arr))]
         l = [0] * len(arr)
@@ -49,12 +47,12 @@ class Solution:
         a[2].append(5)
         print(a, c)
 
-    # reduce：可以分别对相邻元素使用同一种计算规则，同时每一步结果作为下一步的参数，很典型的函数式编程用法。
+    # 3.reduce：可以分别对相邻元素使用同一种计算规则，同时每一步结果作为下一步的参数，很典型的函数式编程用法。
     def reduceDemo(self, arr):
         from functools import reduce
         print('The sum of the array is ', reduce(lambda a, b: a+b, arr))
 
-    # map:它接收一个函数 f 和一个 list，并通过把函数 f 依次作用在 list 的每个元素上，得到一个新的 list 并返回,可以将参数一一映射来计算.
+    # 4.map:它接收一个函数 f 和一个 list，并通过把函数 f 依次作用在 list 的每个元素上，得到一个新的 list 并返回,可以将参数一一映射来计算.
     def mapDemo(self, arr):
         lis = map(lambda x: x**x, arr)
         print(list(lis))
@@ -71,7 +69,7 @@ class Solution:
             return st[0].upper() + st[1:] + str(i), i * 1.2
         print(list(map(f, d.keys(), d.values())))
 
-    # deque: list 删除末尾的操作是`O(1)`的，但是删除头操作就是`O(n)`，这时候我们就需要一个双端队列 `deque`。
+    # 5.deque: list 删除末尾的操作是`O(1)`的，但是删除头操作就是`O(n)`，这时候我们就需要一个双端队列 `deque`。
     # 在序列的前后你都可以执行添加或删除操作。
     # 首尾的常规操作为：
     # - `append`，添加到末尾
