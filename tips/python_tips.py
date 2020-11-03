@@ -14,6 +14,7 @@ class Solution:
         rows = len(arr2)
         cols = len(arr2[0])
         l = [[0] for i in range(cols) for j in range(rows)]
+        cols = [x[j] for x in arr2]  # 二维数组中取第j列不能直接用a[:][j]
 
         # 从后向前遍历
         for i in range(0, -10, -1):

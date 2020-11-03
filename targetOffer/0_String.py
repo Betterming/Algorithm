@@ -109,6 +109,33 @@ class Solution:
             if v == 1:
                 return s.index(k)
 
+    def FirstNotRepeatingChar3(self, s):
+        """
+        用字典，k为字符，v为位置，当存在时，v += len(s)
+        :param s:
+        :return:
+        """
+        s_len = len(s)
+        if not s or s_len > 1000 or s_len <= 0:
+            return -1
+        d = {}
+        for i in range(s_len):
+            if s[i] in d:
+                d[s[i]] += s_len
+            else:
+                d[s[i]] = i
+        res = s_len
+        for k, v in d.items():
+            if v < s_len:
+                res = min(res, v)
+        if res == s_len:
+            return -1
+        else:
+            return res
+
+
+
+
     def LeftRotateString(self, s, n):
         """
         43. 循环左移n位后的序列输出
@@ -237,6 +264,22 @@ class Solution:
                 return False
         return True
 
+    def KMP1(self, pat, txt):
+        m = len(pat)
+        n = len(txt)
+        for i in range(n-m+1):
+            j = 0
+            while j < m:
+                if pat[j] != txt[i+j]:
+                    break
+                else:
+                    j += 1
+            if j == m:
+                return i
+        return -1
+
+
+
 
 if __name__ == '__main__':
     solution = Solution()
@@ -266,7 +309,10 @@ if __name__ == '__main__':
 
     res44 = solution.ReverseSentence("student. a am I")
     print("ReverseSentence", res44)
+    print("KMP1", solution.KMP1('abc', 'fjafafabceabc'))
 
+    res66 = solution.FirstNotRepeatingChar3("aabcceff")
+    print(res66)
 
 
 
