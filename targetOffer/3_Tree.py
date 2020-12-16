@@ -290,16 +290,26 @@ class Solution:
 
     def KthNode2(self, pRoot, k):
         """
-        idea2: 非递归中序遍历（深度遍历）
+        idea2: 中序遍历，count统计到k时退出
         :param pRoot:
         :param k:
         :return:
         """
         if not pRoot:
             return None
-        stack = []
         count = 0
-        stack.append()
+        res = -1
+        def dfs(root):
+            if not root:
+                return None
+            dfs(root.left)
+            count += 1
+            if count == k:
+                res = count
+                return
+            dfs(root.right)
+        dfs(pRoot)
+        return res
 
     def Print(self, pRoot):
         """

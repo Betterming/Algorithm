@@ -20,25 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="264b72da-ffbf-4bb9-a73c-c09eebb05148" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JupyterNotebook/.ipynb_checkpoints/Algorithm_Summary-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JupyterNotebook/.ipynb_checkpoints/python_tips-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JupyterNotebook/Algorithm_Summary.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JupyterNotebook/python_tips.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JupyterNotebook/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bishi/baozang.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bishi/tencent1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bishi/tencent2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bishi/tencent3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bishi/tencent4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bishi/tencent5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bishi/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tips/common.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tips/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/backtrack.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/backtrack.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/targetOffer/0_String.py" beforeDir="false" afterPath="$PROJECT_DIR$/targetOffer/0_String.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tips/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/tips/demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tips/python_tips.py" beforeDir="false" afterPath="$PROJECT_DIR$/tips/python_tips.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bishi/a.py" beforeDir="false" afterPath="$PROJECT_DIR$/bishi/a.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bishi/ff.py" beforeDir="false" afterPath="$PROJECT_DIR$/bishi/ff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/targetOffer/3_Tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/targetOffer/3_Tree.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,29 +74,7 @@
       <recent name="$PROJECT_DIR$/targetOffer" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test (1)">
-    <configuration name="0_String" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/targetOffer" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/targetOffer/0_String.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.ff">
     <configuration name="common" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,6 +111,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tips/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ff" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bishi" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bishi/ff.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -202,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ff" />
         <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.common" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.demo" />
-        <item itemvalue="Python.0_String" />
       </list>
     </recent_temporary>
   </component>
@@ -253,6 +238,13 @@
       <workItem from="1598777954551" duration="595000" />
       <workItem from="1598958087328" duration="19605000" />
       <workItem from="1599382354548" duration="38308000" />
+      <workItem from="1604372185766" duration="366000" />
+      <workItem from="1605090323831" duration="3576000" />
+      <workItem from="1605355025697" duration="190000" />
+      <workItem from="1605355482099" duration="251000" />
+      <workItem from="1605609742676" duration="5121000" />
+      <workItem from="1605954480357" duration="53000" />
+      <workItem from="1606194606613" duration="135000" />
     </task>
     <servers />
   </component>
@@ -275,10 +267,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1331" y="403" key="#Notifications" timestamp="1594898756492">
-      <screen x="0" y="23" width="1920" height="1020" />
-    </state>
-    <state x="1331" y="403" key="#Notifications/0.23.1920.1020@0.23.1920.1020" timestamp="1594898756492" />
     <state x="424" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598544095303">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
@@ -287,34 +275,26 @@
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
     <state x="992" y="339" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1020@0.23.1920.1020" timestamp="1599883015233" />
-    <state x="1253" y="256" key="#com.intellij.ide.util.MemberChooser" timestamp="1593419353994">
-      <screen x="0" y="23" width="1920" height="1020" />
-    </state>
-    <state x="1253" y="256" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1020@0.23.1920.1020" timestamp="1593419353994" />
-    <state x="1211" y="447" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog" timestamp="1593419618118">
-      <screen x="0" y="23" width="1920" height="1020" />
-    </state>
-    <state x="1211" y="447" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog/0.23.1920.1020@0.23.1920.1020" timestamp="1593419618118" />
     <state x="535" y="340" key="FileChooserDialogImpl" timestamp="1598106704236">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
     <state x="535" y="340" key="FileChooserDialogImpl/0.23.1920.1020@0.23.1920.1020" timestamp="1598106704236" />
-    <state width="1876" height="325" key="GridCell.Tab.0.bottom" timestamp="1599969127154">
+    <state width="1313" height="316" key="GridCell.Tab.0.bottom" timestamp="1605668100482">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
-    <state width="1876" height="325" key="GridCell.Tab.0.bottom/0.23.1920.1020@0.23.1920.1020" timestamp="1599969127154" />
-    <state width="1876" height="325" key="GridCell.Tab.0.center" timestamp="1599969127154">
+    <state width="1313" height="316" key="GridCell.Tab.0.bottom/0.23.1920.1020@0.23.1920.1020" timestamp="1605668100482" />
+    <state width="1313" height="316" key="GridCell.Tab.0.center" timestamp="1605668100481">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
-    <state width="1876" height="325" key="GridCell.Tab.0.center/0.23.1920.1020@0.23.1920.1020" timestamp="1599969127154" />
-    <state width="1876" height="325" key="GridCell.Tab.0.left" timestamp="1599969127153">
+    <state width="1313" height="316" key="GridCell.Tab.0.center/0.23.1920.1020@0.23.1920.1020" timestamp="1605668100481" />
+    <state width="1313" height="316" key="GridCell.Tab.0.left" timestamp="1605668100481">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
-    <state width="1876" height="325" key="GridCell.Tab.0.left/0.23.1920.1020@0.23.1920.1020" timestamp="1599969127153" />
-    <state width="1876" height="325" key="GridCell.Tab.0.right" timestamp="1599969127154">
+    <state width="1313" height="316" key="GridCell.Tab.0.left/0.23.1920.1020@0.23.1920.1020" timestamp="1605668100481" />
+    <state width="1313" height="316" key="GridCell.Tab.0.right" timestamp="1605668100481">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
-    <state width="1876" height="325" key="GridCell.Tab.0.right/0.23.1920.1020@0.23.1920.1020" timestamp="1599969127154" />
+    <state width="1313" height="316" key="GridCell.Tab.0.right/0.23.1920.1020@0.23.1920.1020" timestamp="1605668100481" />
     <state width="1876" height="325" key="GridCell.Tab.1.bottom" timestamp="1599969127154">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
@@ -335,14 +315,6 @@
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
     <state x="720" y="75" key="SettingsEditor/0.23.1920.1020@0.23.1920.1020" timestamp="1598544347945" />
-    <state x="1067" y="197" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593416812853">
-      <screen x="0" y="23" width="1920" height="1020" />
-    </state>
-    <state x="1067" y="197" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1920.1020@0.23.1920.1020" timestamp="1593416812853" />
-    <state x="982" y="269" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1593415979278">
-      <screen x="0" y="23" width="1920" height="1020" />
-    </state>
-    <state x="982" y="269" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1920.1020@0.23.1920.1020" timestamp="1593415979278" />
     <state x="1105" y="249" width="670" height="676" key="search.everywhere.popup" timestamp="1599406153762">
       <screen x="0" y="23" width="1920" height="1020" />
     </state>
@@ -364,8 +336,8 @@
     <SUITE FILE_PATH="coverage/Algorithm$tencent4.coverage" NAME="tencent4 Coverage Results" MODIFIED="1599398715390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bishi" />
     <SUITE FILE_PATH="coverage/Algorithm$backtrack.coverage" NAME="backtrack Coverage Results" MODIFIED="1599390381862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode" />
     <SUITE FILE_PATH="coverage/Algorithm$test.coverage" NAME="test Coverage Results" MODIFIED="1599903375677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
-    <SUITE FILE_PATH="coverage/Algorithm$ff.coverage" NAME="ff Coverage Results" MODIFIED="1599041607940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
     <SUITE FILE_PATH="coverage/Algorithm$3.coverage" NAME="3 Coverage Results" MODIFIED="1599044941403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
+    <SUITE FILE_PATH="coverage/Algorithm$ff.coverage" NAME="ff Coverage Results" MODIFIED="1605612148421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bishi" />
     <SUITE FILE_PATH="coverage/Algorithm$tencent3.coverage" NAME="tencent3 Coverage Results" MODIFIED="1599401245600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bishi" />
     <SUITE FILE_PATH="coverage/Algorithm$demo.coverage" NAME="demo Coverage Results" MODIFIED="1599902387688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tips" />
     <SUITE FILE_PATH="coverage/Algorithm$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1599914741013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bishi" />
